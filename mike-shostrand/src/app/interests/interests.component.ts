@@ -1,5 +1,5 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { NgbCarousel } from '@ng-bootstrap/ng-bootstrap';
+import { NgbAccordion, NgbCarousel } from '@ng-bootstrap/ng-bootstrap';
 
 import { Interest } from '../interest';
 import { InterestsService } from '../interests.service';

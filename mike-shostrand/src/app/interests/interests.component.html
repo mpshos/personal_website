@@ -15,3 +15,19 @@
     </div>
     <div class="col-md-2"></div>
 </div>
+
+<div class="row">
+    <div class="col-md-2"></div>
+
+    <div class="col-md-8">
+        <ngb-accordion activeIds="ngb-panel-0" *ngIf="interests">
+            <ngb-panel *ngFor="let interest of interests;" title="{{interest.name}}">
+                <ng-template ngbPanelContent>
+                    {{interest.body}}
+                </ng-template>
+            </ngb-panel>
+        </ngb-accordion>
+    </div>
+
+    <div class="col-md-2"></div>
+</div>
