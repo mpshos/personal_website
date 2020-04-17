@@ -20,7 +20,9 @@ export class InterestsComponent implements OnInit {
   constructor(private interestsService: InterestsService) { }
 
   ngOnInit() {
-    this.interests = this.interestsService.getInterests();
+    this.interestsService.getInterests().subscribe(
+      interests => this.interests = interests
+    );
 
     // this.carousel.pause();
   }
